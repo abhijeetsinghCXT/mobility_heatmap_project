@@ -24,7 +24,7 @@ Bash
 **4. Files in this Repository**
    
 smart_mobility_dataset.csv	  -  Input Data: The simulated dataset containing Lat/Lon, Vehicle Count, Speed, and Traffic Condition.
-smart_pathway_notebook.ipynb  -  Main Code: A Jupyter/Colab notebook containing all the project steps, from data loading and EDA to heatmap generation, clustering, efficiency scoring, and final proposal.
+smart_pathway_notebook.ipynb  -  Main Code: A Jupyter/Colab notebook containing all the project steps, from data loading and EDA to heatmap generation, clustering, efficiency scoring, and final proposal. 
 README.md - This documentation file.
 
 
@@ -32,10 +32,10 @@ README.md - This documentation file.
 The project execution is encapsulated within the smart_pathway_notebook.ipynb file and proceeds in these sequential steps:
 
 Step 5.1: Data Loading & EDA
-The initial phase loads the smart_mobility_dataset.csv file into a Pandas DataFrame (df) and performs Exploratory Data Analysis (EDA) to check data types, statistics, and traffic condition distribution.
+The initial phase loads the `smart_mobility_dataset.csv` file into a Pandas DataFrame (df) and performs Exploratory Data Analysis (EDA) to check data types, statistics, and traffic condition distribution.
 
 Step 5.2: Mobility Heatmap Visualization
-An interactive map is created using Folium and the HeatMap plugin. The density of the heatmap is weighted by the Vehicle_Count column, visually highlighting the areas of highest traffic concentration.
+An interactive map is created using Folium and the HeatMap plugin. The density of the heatmap is weighted by the `Vehicle_Count` column, visually highlighting the areas of highest traffic concentration.
 
 Step 5.3: Congestion Hotspot Identification
 The K-Means Clustering algorithm is applied specifically to data points marked with 'High' traffic condition.
