@@ -1,8 +1,8 @@
-1. Project Overview
+**1. Project Overview**
    
 This repository houses a project focused on using Artificial Intelligence and geospatial data analysis to optimize urban infrastructure. By analyzing large-scale mobility data, we generate mobility heatmaps to identify high-traffic zones, apply K-Means Clustering to pinpoint specific congestion hotspots, and develop a custom Pathway Efficiency Scoring Model to propose targeted, data-driven solutions for urban planners. The goal is to enhance traffic flow, reduce congestion, and improve urban accessibility.
 
-3. Objectives
+**2. Objectives**
    
 ✅ Collect and Analyze mobility data to identify high-traffic zones.
 
@@ -14,22 +14,21 @@ This repository houses a project focused on using Artificial Intelligence and ge
 
 💡 Propose smart pathway re-designs and infrastructure improvements based on data analysis.
 
-3. Prerequisites
+**3. Prerequisites**
 To run this project, you need Python installed, along with the following libraries:
 
 Bash
 
 `pip install pandas matplotlib seaborn folium scikit-learn`
 
-4. Files in this Repository
+**4. Files in this Repository**
    
-**File/Folder**                  **Description**
-smart_mobility_dataset.csv	  |  Input Data: The simulated dataset containing Lat/Lon, Vehicle Count, Speed, and Traffic Condition.
-smart_pathway_notebook.ipynb  |  Main Code: A Jupyter/Colab notebook containing all the project steps, from data loading and EDA to heatmap generation,                                                        clustering, efficiency scoring, and final proposal.
-README.md	                  |  This documentation file.
+smart_mobility_dataset.csv	  -  Input Data: The simulated dataset containing Lat/Lon, Vehicle Count, Speed, and Traffic Condition.
+smart_pathway_notebook.ipynb  -  Main Code: A Jupyter/Colab notebook containing all the project steps, from data loading and EDA to heatmap generation, clustering, efficiency scoring, and final proposal.
+README.md - This documentation file.
 
 
-5. Methodology and Execution
+**5. Methodology and Execution**
 The project execution is encapsulated within the smart_pathway_notebook.ipynb file and proceeds in these sequential steps:
 
 Step 5.1: Data Loading & EDA
@@ -49,23 +48,7 @@ A simple, AI-derived Efficiency Score is calculated for every data point to quan
 Where a higher score indicates better flow.
 
 Step 5.5: Smart Pathway Proposal
-For each of the 5 identified hotspots, the average Efficiency Score in its immediate vicinity is calculated. A specific proposal is then generated:
+For each of the 5 identified hotspots, the average Efficiency Score in its immediate vicinity is calculated. A specific proposal is then generated.
 
-**Score Range**	   **Proposal**	            **Action**
-≥0.6	    |   Optimal Flow	     |    Minor Maintenance
-0.4 to 0.6	|   Moderate Congestion  |    Traffic Light Optimization (e.g., adaptive signaling)
-<0.4	    |   Critical Congestion	 |    Pathway Re-design (e.g., dedicated bypass lanes)
-
-
-6. Final Recommendation Example
-The project identified the following proposal set for urban planners:
-
-**Hotspot ID**	      **Avg. Efficiency Score** 	 **Primary Recommendation**
-2	           |  0.584	                 |   Implement Real-Time Adaptive Traffic Lights.
-Other Hotspots |  >0.6	                 |   Monitoring and Minor Optimizations.
-
-
-This output allows city officials to prioritize capital investment and focus AI-based solutions where they will have the greatest impact.
-
-7. License
+**6. License**
 This project is open-source. Please feel free to fork and adapt it for your own urban planning scenarios.
